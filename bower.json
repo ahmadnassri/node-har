@@ -1,0 +1,7 @@
+{
+    "name": "HAR.js",
+    "version": "1.0.0",
+    "dependencies": {
+        "qunit": "~1.12.0"
+    }
+}
