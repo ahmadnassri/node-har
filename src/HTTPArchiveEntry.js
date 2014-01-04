@@ -1,21 +1,36 @@
-(function(window) {
+(function (window) {
     'use strict';
 
     var HTTPArchiveEntry = window.HTTPArchiveEntry = function (options) {
         Object.defineProperties(this, {
+            props: {
+                enumerable: false,
+                configurable: false,
+                value: {
+                    _startedDateTime: new Date,
+                    _time: new Date,
+                    _request: null,
+                    _response: null,
+                }
+            },
+
             startedDateTime: {
                 enumerable: true,
 
                 get: function () {
-                    return this._startedDateTime;
+                    return this.props._startedDateTime;
                 },
 
                 set: function (value) {
                     if (!(value instanceof Date)) {
-                        throw new Error('invalid date object.');
+                        try {
+                            value = new Date(value);
+                        } catch (e) {
+                            throw new Error('invalid date object.');
+                        }
                     }
 
-                    this._startedDateTime = value;
+                    this.props._startedDateTime = value;
                 }
             },
 
@@ -23,7 +38,7 @@
                 enumerable: true,
 
                 get: function () {
-                    return this._time;
+                    return this.props._time;
                 },
 
                 set: function (value) {
@@ -31,7 +46,7 @@
                         throw new Error('invalid time value.');
                     }
 
-                    this._time = value;
+                    this.props._time = value;
                 }
             },
 
@@ -39,15 +54,19 @@
                 enumerable: true,
 
                 get: function () {
-                    return this._request;
+                    return this.props._request;
                 },
 
                 set: function (value) {
                     if (!(value instanceof HTTPArchiveRequest)) {
-                        throw new Error('invalid request object.');
+                        try {
+                            value = new HTTPArchiveRequest(value);
+                        } catch (e) {
+                            throw new Error('invalid request object.');
+                        }
                     }
 
-                    this._request = value;
+                    this.props._request = value;
                 }
             },
 
@@ -55,48 +74,23 @@
                 enumerable: true,
 
                 get: function () {
-                    return this._response;
+                    return this.props._response;
                 },
 
                 set: function (value) {
                     if (!(value instanceof HTTPArchiveResponse)) {
-                        throw new Error('invalid request object.');
+                        try {
+                            value = new HTTPArchiveResponse(value);
+                        } catch (e) {
+                            throw new Error('invalid response object.');
+                        }
                     }
 
-                    this._response = value;
+                    this.props._response = value;
                 }
             }
         });
 
         this.setOptions(options);
-    };
-
-    HTTPArchiveEntry.prototype.setOptions = function (options) {
-        if (arguments.length == 0) {
-            throw new Error('constructor called with no arguments, expected options.');
-        }
-
-        if (typeof options !== 'object' || Array.isArray(options)) {
-            throw new Error('invalid options object.');
-        }
-
-        for (var key in options) {
-            if (options.hasOwnProperty(key)){
-                this[key] = options[key];
-            }
-        }
-    };
-
-    HTTPArchiveEntry.prototype.toJSON = function () {
-        return {
-            startedDateTime: this._startedDateTime,
-            time: this._time,
-            request: this._request,
-            response: this._response,
-            cache: this._cache || null,
-            timings: this._timings,
-            connection: this._connection,
-            pageref: this._pageref || null
-        };
     };
 })(window || this);

@@ -1,27 +1,34 @@
-test('initate objects', function() {
-    var har = new HTTPArchive();
-    ok(har instanceof HTTPArchive);
+test('HTTPArchivePage', function() {
+    var page = new HTTPArchivePage(data.log.pages[0]);
 
-    var entry = new HTTPArchiveEntry({
-        startedDateTime: new Date('2013-12-30T06:42:48.202Z'),
-        time: 3231.657028198242,
-        request: new HTTPArchiveRequest(),
-        response: new HTTPArchiveResponse(),
-        cache: null,
-        timings: {
-          blocked: 0.4260000023350585,
-          dns: -1,
-          connect: -1,
-          send: 0.050999999075429514,
-          wait: 2722.289000001183,
-          receive: 508.8910281956487,
-          ssl: -1
-        },
-        connection: '31669',
-        pageref: 'page_1'
-    });
+    ok(page instanceof HTTPArchivePage, 'created instance of HTTPArchivePage');
+    deepEqual(page.toJSON(), data.log.pages[0], 'input JSON === output JSON');
+});
 
-    ok(entry instanceof HTTPArchiveEntry);
+test('HTTPArchiveRequest', function() {
+    var request = new HTTPArchiveRequest(data.log.entries[0].request);
 
-    console.log(entry.toJSON());
+    ok(request instanceof HTTPArchiveRequest, 'created instance of HTTPArchiveRequest');
+    deepEqual(request.toJSON(), data.log.entries[0].request, 'input JSON === output JSON');
+});
+
+test('HTTPArchiveResponse', function() {
+    var response = new HTTPArchiveResponse(data.log.entries[0].response);
+
+    ok(response instanceof HTTPArchiveResponse, 'created instance of HTTPArchiveResponse');
+    deepEqual(response.toJSON(), data.log.entries[0].response, 'input JSON === output JSON');
+});
+
+test('HTTPArchiveEntry', function() {
+    var entry = new HTTPArchiveEntry(data.log.entries[0]);
+
+    ok(entry instanceof HTTPArchiveEntry, 'created instance of HTTPArchiveEntry');
+    deepEqual(entry.toJSON(), data.log.entries[0], 'input JSON === output JSON');
+});
+
+test('HTTPArchiveLog', function() {
+    var log = new HTTPArchiveLog(data.log);
+
+    ok(log instanceof HTTPArchiveLog, 'created instance of HTTPArchiveLog');
+    deepEqual(log.toJSON(), data.log, 'input JSON === output JSON');
 });

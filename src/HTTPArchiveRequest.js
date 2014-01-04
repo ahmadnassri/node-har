@@ -1,4 +1,4 @@
-(function(window) {
+(function (window) {
     'use strict';
 
     var HTTPArchiveRequest = window.HTTPArchiveRequest = function (options) {
@@ -12,5 +12,7 @@
             headersSize: 0,
             bodySize: 0
         };*/
+
+        this.setOptions(options);
     };
 })(window || this);
