@@ -4,16 +4,18 @@ a JavaScript library to manupilate [HTTP Archive 1.2](http://www.softwareishard.
 
 ## Resources
 
-- [Follow us on Twitter][1]
-- [Report issues][2]
-- [Donate][3]
-- [HAR 1.2 Spec][4]
-- [HAR Viewer][5]
-- [Tools, projects and applications that support HTTP Archive format (HAR)][6]
+- [NPM Package][1]
+- [Follow me on Twitter][2]
+- [Report issues][3]
+- [Donate][4]
+- [HAR 1.2 Spec][5]
+- [HAR Viewer][6]
+- [Tools, projects and applications that support HTTP Archive format (HAR)][7]
 
-[1]: http://twitter.com/codeinchaos
-[2]: https://github.com/codeinchaos/httparchive.js/issues
-[3]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UJ2B2BTK9VLRS
-[4]: http://www.softwareishard.com/blog/har-12-spec/
-[5]: http://www.softwareishard.com/blog/har-viewer/
-[6]: http://www.softwareishard.com/blog/har-adopters
+[1]: https://npmjs.org/package/httparchive.js
+[2]: http://twitter.com/ahmadnassri
+[3]: https://github.com/codeinchaos/httparchive.js/issues
+[4]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UJ2B2BTK9VLRS
+[5]: http://www.softwareishard.com/blog/har-12-spec/
+[6]: http://www.softwareishard.com/blog/har-viewer/
+[7]: http://www.softwareishard.com/blog/har-adopters
