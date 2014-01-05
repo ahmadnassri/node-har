@@ -1,7 +1,4 @@
 {
-    "name": "HAR.js",
-    "version": "1.0.0",
-    "dependencies": {
-        "qunit": "~1.12.0"
-    }
+    "name": "HTTPArchive.js",
+    "version": "1.0.0"
 }
