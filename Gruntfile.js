@@ -86,6 +86,4 @@ module.exports = function (grunt) {
         'concat',
         'qunit'
     ]);
-
-    grunt.registerTask('travis', 'release');
 };

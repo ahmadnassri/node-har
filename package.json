@@ -36,6 +36,6 @@
         "time-grunt": "~0.2.3"
     },
     "scripts": {
-        "test": "grunt travis --verbose"
+        "test": "grunt --verbose"
     }
 }
