@@ -88,6 +88,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('release', [
+        'bump::patch',
         'default',
         'uglify'
     ]);

@@ -36,7 +36,7 @@
                 enumerable: true,
                 writable: true,
                 value: {
-                    name: 'HAR.js',
+                    name: 'HTTPArchive.js',
                     version: '1.0.0'
                 }
             },

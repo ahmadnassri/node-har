@@ -1,6 +1,6 @@
 {
     "name": "httparchive.js",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Ahmad Nassri",
     "description": "a JavaScript library to manupilate HTTP Archive 1.2",
     "keywords": [
@@ -17,10 +17,12 @@
     "bugs": {
         "url": "https://github.com/codeinchaos/httparchive.js/issues"
     },
-    "licenses": [{
-      "type": "MIT",
-      "url": "https://github.com/codeinchaos/httparchive.js/blob/master/LICENSE"
-    }],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/codeinchaos/httparchive.js/blob/master/LICENSE"
+        }
+    ],
     "devDependencies": {
         "bower": "~1.2.8",
         "grunt": "~0.4.1",

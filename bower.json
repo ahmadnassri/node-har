@@ -1,13 +1,13 @@
 {
     "name": "HTTPArchive.js",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "dist/HTTPArchive.js",
     "ignore": [
-        "tests"
+        "tests",
         ".gitignore",
         ".jshintrc",
         ".travis.yml",
         "package.json",
-        "Gruntfile.js",
+        "Gruntfile.js"
     ]
 }
