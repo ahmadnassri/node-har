@@ -49,7 +49,7 @@ module.exports = function (grunt) {
 
             dist: {
                 files: {
-                    'dist/HTTPArchive.js': 'dist/HTTPArchive.js'
+                    'dist/HTTPArchive.min.js': 'dist/HTTPArchive.js'
                 }
             }
         },
@@ -85,5 +85,10 @@ module.exports = function (grunt) {
         'jshint',
         'concat',
         'qunit'
+    ]);
+
+    grunt.registerTask('release', [
+        'default',
+        'uglify'
     ]);
 };

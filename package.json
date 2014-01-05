@@ -1,5 +1,5 @@
 {
-    "name": "HAR.js",
+    "name": "httparchive.js",
     "version": "1.0.0",
     "author": "Ahmad Nassri",
     "description": "a JavaScript library to manupilate HTTP Archive 1.2",
@@ -36,6 +36,6 @@
         "time-grunt": "~0.2.3"
     },
     "scripts": {
-        "test": "grunt --verbose"
+        "test": "grunt release --verbose"
     }
 }
