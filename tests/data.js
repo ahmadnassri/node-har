@@ -1,12 +1,13 @@
 var data = {
-    'log':{
+    'log': {
         'version':'1.1',
+        'comment': null,
         'creator':{
             'name':'Firebug',
             'version':'1.5X.0b8'
         },
 
-        'browser':{
+        'browser': {
             'name':'Firefox',
             'version':'3.6b6pre'
         },
@@ -15,6 +16,7 @@ var data = {
             'startedDateTime':'2010-01-02T13:51:01.186Z',
             'id':'page_62143',
             'title':'Google',
+            'comment': null,
             'pageTimings':{
                 'onContentLoad':90,
                 'onLoad':245

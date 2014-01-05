@@ -1,8 +1,16 @@
 (function (window) {
     'use strict';
 
-    var HTTPArchiveLog = window.HTTPArchiveLog = function (options) {
+    var HTTPArchiveLog = window.HTTPArchiveLog = function (options, strict) {
+        this._strict = (strict === undefined) ? true : strict;
+
         Object.defineProperties(this, {
+            _strict: {
+                enumerable: false,
+                writable: true,
+                value: true
+            },
+
             props: {
                 enumerable: false,
                 configurable: false,
@@ -10,6 +18,12 @@
                     _pages: [],
                     _entries: []
                 }
+            },
+
+            comment: {
+                enumerable: true,
+                writable: true,
+                value: ''
             },
 
             version: {

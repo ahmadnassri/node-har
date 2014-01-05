@@ -7,12 +7,16 @@
         }
 
         if (typeof options !== 'object' || Array.isArray(options)) {
-            console.log(options);
             throw new Error('invalid options object.');
         }
 
         for (var key in options) {
-            if (options.hasOwnProperty(key)){
+            if (options.hasOwnProperty(key)) {
+
+                if (this._strict && !this.hasOwnProperty(key)) {
+                    throw new Error('invalid options object. [' + key + '].');
+                }
+
                 this[key] = options[key];
             }
         }
@@ -25,6 +29,11 @@
             var value = this[key];
 
             if (this.hasOwnProperty(key)) {
+                if (value === null) {
+                    obj[key] = value;
+                    continue;
+                }
+
                 if (value instanceof Date) {
                     obj[key] = value.toISOString();
                 } else if (value.toJSON) {

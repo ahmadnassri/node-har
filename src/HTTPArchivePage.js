@@ -1,8 +1,21 @@
 (function (window) {
     'use strict';
 
-    var HTTPArchivePage = window.HTTPArchivePage = function (options) {
+    var HTTPArchivePage = window.HTTPArchivePage = function (options, strict) {
+        this._strict = (strict === undefined) ? true : strict;
+
         Object.defineProperties(this, {
+            _strict: {
+                enumerable: false,
+                writable: true
+            },
+
+            comment: {
+                enumerable: true,
+                writable: true,
+                value: ''
+            },
+
             id: {
                 enumerable: true,
                 writable: true,
