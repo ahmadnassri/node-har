@@ -4,7 +4,9 @@ a JavaScript library to manupilate [HTTP Archive 1.2](http://www.softwareishard.
 
 
 ### Features
-- validates dates / HAR object specs (strict mode).
+- validates dates / HAR object specs (strict mode)
+- provides default values for common properties (Dates, Page IDs, etc...)
+- import/export HAR files
 
 ### API Example
 
