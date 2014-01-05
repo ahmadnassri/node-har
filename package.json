@@ -2,7 +2,7 @@
     "name": "HAR.js",
     "version": "1.0.0",
     "author": "Ahmad Nassri",
-    "description": "",
+    "description": "a JavaScript library to manupilate HTTP Archive 1.2",
     "keywords": [
         "HAR",
         "HTTP",
@@ -12,35 +12,30 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/codeinchaos/har.js.git"
+        "url": "https://github.com/codeinchaos/httparchive.js.git"
     },
     "bugs": {
-        "url": "https://github.com/codeinchaos/har.js/issues"
+        "url": "https://github.com/codeinchaos/httparchive.js/issues"
     },
     "licenses": [{
       "type": "MIT",
-      "url": "https://github.com/codeinchaos/har.js/blob/master/LICENSE"
+      "url": "https://github.com/codeinchaos/httparchive.js/blob/master/LICENSE"
     }],
     "devDependencies": {
         "bower": "~1.2.8",
         "grunt": "~0.4.1",
+        "grunt-contrib-concat": "~0.3.0",
         "grunt-contrib-uglify": "~0.2.7",
         "grunt-contrib-watch": "~0.5.3",
         "grunt-contrib-jshint": "~0.7.2",
         "grunt-contrib-clean": "~0.5.0",
-        "grunt-contrib-copy": "~0.4.1",
         "grunt-contrib-qunit": "~0.3.0",
         "grunt-bumpx": "~0.1.5",
-        "grunt-banner": "~0.2.0",
         "phantomjs": "~1.9.2-5",
         "load-grunt-tasks": "~0.2.0",
         "time-grunt": "~0.2.3"
     },
     "scripts": {
         "test": "grunt travis --verbose"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:codeinchaos/har.js.git"
     }
 }

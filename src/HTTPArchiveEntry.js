@@ -15,8 +15,8 @@
                 enumerable: false,
                 configurable: false,
                 value: {
-                    _startedDateTime: new Date,
-                    _time: new Date,
+                    _startedDateTime: new Date(),
+                    _time: new Date(),
                     _request: null,
                     _response: null,
                 }

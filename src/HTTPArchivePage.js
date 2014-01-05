@@ -41,7 +41,7 @@
                 enumerable: false,
                 configurable: false,
                 value: {
-                    _startedDateTime: new Date
+                    _startedDateTime: new Date()
                 }
             },
 

@@ -65,11 +65,11 @@
 
     HTTPArchiveLog.prototype.addCookie = function (name, value) {
         this.cookies.push({name: name, value: value});
-        return page;
+        return this;
     };
 
     HTTPArchiveLog.prototype.addHeader = function (name, value) {
         this.headers.push({name: name, value: value});
-        return page;
+        return this;
     };
 })(window || this);

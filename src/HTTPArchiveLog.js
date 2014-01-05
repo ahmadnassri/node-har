@@ -92,7 +92,7 @@
 
     HTTPArchiveLog.prototype.addPage = function (page) {
         if (!(page instanceof HTTPArchivePage)) {
-            var page = new HTTPArchivePage(page);
+            page = new HTTPArchivePage(page);
         }
 
         this.props._pages.push(page);
@@ -101,7 +101,7 @@
 
     HTTPArchiveLog.prototype.addEntry = function (entry) {
         if (!(entry instanceof HTTPArchiveEntry)) {
-            var entry = new HTTPArchiveEntry(entry);
+            entry = new HTTPArchiveEntry(entry);
         }
 
         this.props._entries.push(entry);

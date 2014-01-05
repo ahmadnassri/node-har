@@ -2,7 +2,7 @@
     'use strict';
 
     HTTPArchiveLog.prototype.setOptions = HTTPArchiveRequest.prototype.setOptions = HTTPArchiveResponse.prototype.setOptions = HTTPArchivePage.prototype.setOptions = HTTPArchiveEntry.prototype.setOptions = function (options) {
-        if (arguments.length == 0 || options === undefined) {
+        if (arguments.length === 0 || options === undefined) {
             throw new Error('constructor called with no arguments, expected options.');
         }
 
@@ -14,6 +14,7 @@
             if (options.hasOwnProperty(key)) {
 
                 if (this._strict && !this.hasOwnProperty(key)) {
+                    // TODO: better error messages
                     throw new Error('invalid options object. [' + key + '].');
                 }
 
@@ -22,7 +23,7 @@
         }
     };
 
-    function toJSON () {
+    HTTPArchiveLog.prototype.toJSON = HTTPArchiveRequest.prototype.toJSON = HTTPArchiveResponse.prototype.toJSON = HTTPArchivePage.prototype.toJSON = HTTPArchiveEntry.prototype.toJSON = function () {
         var obj = {};
 
         for (var key in this) {
@@ -53,11 +54,5 @@
         }
 
         return obj;
-    }
-
-    HTTPArchiveLog.prototype.toJSON = toJSON;
-    HTTPArchiveRequest.prototype.toJSON = toJSON;
-    HTTPArchiveResponse.prototype.toJSON = toJSON;
-    HTTPArchivePage.prototype.toJSON = toJSON;
-    HTTPArchiveEntry.prototype.toJSON = toJSON;
+    };
 })(window || this);

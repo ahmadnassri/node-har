@@ -1,0 +1,32 @@
+{
+    "indent":   4,
+    "quotmark": "single",
+    "strict": true,
+    "browser":  true,
+    "jquery":   true,
+    "devel":    true,
+
+    "esnext":   true,
+    "curly":    true,
+    "eqeqeq":   true,
+    "immed":    true,
+    "latedef":  true,
+    "newcap":   true,
+    "noarg":    true,
+    "sub":      true,
+    "undef":    true,
+    "eqnull":   true,
+    "bitwise":  true,
+    "trailing": true,
+
+    "globals": {
+        "module":       true,
+        "require":      true,
+
+        "HTTPArchiveLog": true,
+        "HTTPArchivePage": true,
+        "HTTPArchiveEntry": true,
+        "HTTPArchiveRequest": true,
+        "HTTPArchiveResponse": true
+    }
+}
