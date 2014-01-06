@@ -89,7 +89,6 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('release', [
-        'bump::minor',
         'default',
         'uglify'
     ]);
