@@ -4,6 +4,8 @@
     var HTTPArchiveResponse = window.HTTPArchiveResponse = function (options, strict) {
         this._strict = (strict === undefined) ? true : strict;
 
+        Object.defineProperties(this, new HTTPArchiveHeadersProps(this));
+
         Object.defineProperties(this, {
             _strict: {
                 enumerable: false,
@@ -35,12 +37,6 @@
                 value: ''
             },
 
-            headersSize: {
-                enumerable: true,
-                writable: true,
-                value: 0
-            },
-
             bodySize: {
                 enumerable: true,
                 writable: true,
@@ -57,18 +53,6 @@
                 }
             },
 
-            cookies: {
-                enumerable: true,
-                writable: true,
-                value: []
-            },
-
-            headers: {
-                enumerable: true,
-                writable: true,
-                value: []
-            },
-
             comment: {
                 enumerable: true,
                 writable: true,
@@ -79,13 +63,16 @@
         this.setOptions(options);
     };
 
-    HTTPArchiveResponse.prototype.addCookie = function (name, value) {
-        this.cookies.push({name: name, value: value});
-        return this;
-    };
+    HTTPArchiveResponse.prototype.printHeaders = function () {
+        var headers = [];
 
-    HTTPArchiveResponse.prototype.addHeader = function (name, value) {
-        this.headers.push({name: name, value: value});
-        return this;
+        // generatae first header line
+        headers.push(this.httpVersion + ' ' + this.status + ' ' + this.statusText);
+
+        for (var name in this.props._headers) {
+            headers.push(name + ': ' + this.props._headers[name]);
+        }
+
+        return headers.join('\r\n') + '\r\n\r\n';
     };
 })(window || this);

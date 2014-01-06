@@ -1,3 +1,28 @@
+// polyfill for PhantomJS (https://github.com/ariya/phantomjs/issues/10522)
+if (!Function.prototype.bind) {
+  Function.prototype.bind = function (oThis) {
+    if (typeof this !== "function") {
+      // closest thing possible to the ECMAScript 5 internal IsCallable function
+      throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
+    }
+
+    var aArgs = Array.prototype.slice.call(arguments, 1),
+        fToBind = this,
+        fNOP = function () {},
+        fBound = function () {
+          return fToBind.apply(this instanceof fNOP && oThis
+                                 ? this
+                                 : oThis,
+                               aArgs.concat(Array.prototype.slice.call(arguments)));
+        };
+
+    fNOP.prototype = this.prototype;
+    fBound.prototype = new fNOP();
+
+    return fBound;
+  };
+}
+
 test('HTTPArchivePage', function() {
     var page = new HTTPArchivePage(data.log.pages[0]);
 
@@ -29,7 +54,7 @@ test('HTTPArchiveRequest', function() {
 
     // reset all headers
     request.headers = [];
-    equal(request.headersSize, -1, 'headers reset');
+    equal(request.headersSize, 18, 'headers reset');
 
     // cookies
     request.setCookie('MyCookie', 'cookievalue');
@@ -48,6 +73,37 @@ test('HTTPArchiveResponse', function() {
 
     ok(response instanceof HTTPArchiveResponse, 'created instance of HTTPArchiveResponse');
     deepEqual(response.toJSON(), data.log.entries[0].response, 'input JSON === output JSON');
+
+    // headers
+    response.setHeader('X-Content-Type', 'application/xml');
+
+    ok(response.hasHeader('X-Content-Type'), 'custom header added');
+
+    equal(response.getHeader('X-Content-Type'), 'application/xml', 'custom header value verified');
+
+    response.setHeader('X-Content-Type', 'application/json');
+    equal(response.getHeader('X-Content-Type'), 'application/json', 'adjust pre-existing header value');
+
+    //equal(response.headersSize, 666, 'header size recalculated');
+
+    response.removeHeader('X-Content-Type');
+
+    ok(!response.hasHeader('X-Content-Type'), 'custom header removed');
+
+    // reset all headers
+    response.headers = [];
+    equal(response.headersSize, 19, 'headers reset');
+
+    // cookies
+    response.setCookie('MyCookie', 'cookievalue');
+
+    ok(response.hasCookie('MyCookie'), 'custom cookie added');
+
+    equal(response.getCookie('MyCookie'), 'cookievalue', 'custom cookie value verified');
+
+    response.setCookie('MyCookie', 'anothercookievalue');
+
+    equal(response.getCookie('MyCookie'), 'anothercookievalue', 'adjust pre-existing cookie value');
 });
 
 test('HTTPArchiveEntry', function() {

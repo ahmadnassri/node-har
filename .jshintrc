@@ -27,6 +27,8 @@
         "HTTPArchivePage": true,
         "HTTPArchiveEntry": true,
         "HTTPArchiveRequest": true,
-        "HTTPArchiveResponse": true
+        "HTTPArchiveResponse": true,
+        "HTTPArchiveURLRegExp": true,
+        "HTTPArchiveHeadersProps": true
     }
 }

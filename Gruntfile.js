@@ -31,6 +31,7 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     'dist/HTTPArchive.js': [
+
                         'src/HTTPArchiveLog.js',
                         'src/HTTPArchivePage.js',
                         'src/HTTPArchiveEntry.js',
