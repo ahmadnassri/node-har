@@ -1,6 +1,6 @@
 {
     "name": "httparchive.js",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "author": "Ahmad Nassri",
     "description": "a JavaScript library to manupilate HTTP Archive 1.2",
     "keywords": [

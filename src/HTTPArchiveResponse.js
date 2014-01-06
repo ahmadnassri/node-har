@@ -73,12 +73,12 @@
         this.setOptions(options);
     };
 
-    HTTPArchiveLog.prototype.addCookie = function (name, value) {
+    HTTPArchiveResponse.prototype.addCookie = function (name, value) {
         this.cookies.push({name: name, value: value});
         return this;
     };
 
-    HTTPArchiveLog.prototype.addHeader = function (name, value) {
+    HTTPArchiveResponse.prototype.addHeader = function (name, value) {
         this.headers.push({name: name, value: value});
         return this;
     };

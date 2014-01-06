@@ -1,5 +1,5 @@
 /*!
- * HTTPArchive.js v1.0.0 (https://github.com/codeinchaos/httparchive.js.git)
+ * HTTPArchive.js v1.0.3 (https://github.com/codeinchaos/httparchive.js.git)
  * Copyright 2014 Ahmad Nassri
  * Licensed under https://github.com/codeinchaos/httparchive.js/blob/master/LICENSE
  */
@@ -42,7 +42,7 @@
                 enumerable: true,
                 writable: true,
                 value: {
-                    name: 'HAR.js',
+                    name: 'HTTPArchive.js',
                     version: '1.0.0'
                 }
             },
@@ -382,12 +382,12 @@
         this.setOptions(options);
     };
 
-    HTTPArchiveLog.prototype.addCookie = function (name, value) {
+    HTTPArchiveRequest.prototype.addCookie = function (name, value) {
         this.cookies.push({name: name, value: value});
         return this;
     };
 
-    HTTPArchiveLog.prototype.addHeader = function (name, value) {
+    HTTPArchiveRequest.prototype.addHeader = function (name, value) {
         this.headers.push({name: name, value: value});
         return this;
     };
@@ -468,12 +468,12 @@
         this.setOptions(options);
     };
 
-    HTTPArchiveLog.prototype.addCookie = function (name, value) {
+    HTTPArchiveResponse.prototype.addCookie = function (name, value) {
         this.cookies.push({name: name, value: value});
         return this;
     };
 
-    HTTPArchiveLog.prototype.addHeader = function (name, value) {
+    HTTPArchiveResponse.prototype.addHeader = function (name, value) {
         this.headers.push({name: name, value: value});
         return this;
     };
