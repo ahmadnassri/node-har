@@ -11,27 +11,34 @@
                 value: true
             },
 
-            props: {
-                enumerable: false,
-                configurable: false,
-                value: {
-                    _startedDateTime: new Date(),
-                    _time: new Date(),
-                    _request: null,
-                    _response: null,
-                }
-            },
-
             pageref: {
                 enumerable: true,
                 writable: true,
-                value: 0
+                value: undefined
             },
 
             cache: {
                 enumerable: true,
                 writable: true,
                 value: {}
+            },
+
+            serverIPAddress: {
+                enumerable: true,
+                writable: true,
+                value: undefined
+            },
+
+            connection: {
+                enumerable: true,
+                writable: true,
+                value: undefined
+            },
+
+            comment: {
+                enumerable: true,
+                writable: true,
+                value: undefined
             },
 
             timings: {
@@ -44,6 +51,17 @@
                     send: 0,
                     wait: 0,
                     receive: 0
+                }
+            },
+
+            props: {
+                enumerable: false,
+                configurable: false,
+                value: {
+                    _startedDateTime: new Date(),
+                    _time: new Date(),
+                    _request: null,
+                    _response: null,
                 }
             },
 

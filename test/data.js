@@ -36,10 +36,22 @@ var data = {
                 'bodySize':-1,
                 'cookies':[{
                     'name':'PREF',
-                    'value':'ID'
+                    'value':'ID',
+                    'comment': '',
+                    'domain': '',
+                    'path': '/',
+                    'expires': false,
+                    'httpOnly': false,
+                    'secure': false
                 },{
                     'name':'NID',
-                    'value':'29'
+                    'value':'29',
+                    'comment': '',
+                    'domain': '',
+                    'path': '/',
+                    'expires': false,
+                    'httpOnly': false,
+                    'secure': false
                 }],
 
                 'headers':[{
@@ -132,10 +144,22 @@ var data = {
                 'bodySize':-1,
                 'cookies':[{
                     'name':'PREF',
-                    'value':'ID'
+                    'value':'ID',
+                    'comment': '',
+                    'domain': '',
+                    'path': '/',
+                    'expires': false,
+                    'httpOnly': false,
+                    'secure': false
                 },{
                     'name':'NID',
-                    'value':'29'
+                    'value':'29',
+                    'comment': '',
+                    'domain': '',
+                    'path': '/',
+                    'expires': false,
+                    'httpOnly': false,
+                    'secure': false
                 }],
 
                 'headers':[{
@@ -233,10 +257,22 @@ var data = {
                 'bodySize':-1,
                 'cookies':[{
                     'name':'PREF',
-                    'value':'ID'
+                    'value':'ID',
+                    'comment': '',
+                    'domain': '',
+                    'path': '/',
+                    'expires': false,
+                    'httpOnly': false,
+                    'secure': false
                 },{
                     'name':'NID',
-                    'value':'29'
+                    'value':'29',
+                    'comment': '',
+                    'domain': '',
+                    'path': '/',
+                    'expires': false,
+                    'httpOnly': false,
+                    'secure': false
                 }],
 
                 'headers':[{
@@ -335,10 +371,22 @@ var data = {
                 'bodySize':-1,
                 'cookies':[{
                     'name':'PREF',
-                    'value':'ID'
+                    'value':'ID',
+                    'comment': '',
+                    'domain': '',
+                    'path': '/',
+                    'expires': false,
+                    'httpOnly': false,
+                    'secure': false
                 },{
                     'name':'NID',
-                    'value':'29'
+                    'value':'29',
+                    'comment': '',
+                    'domain': '',
+                    'path': '/',
+                    'expires': false,
+                    'httpOnly': false,
+                    'secure': false
                 }],
                 'headers':[{
                     'name':'Host',
@@ -424,10 +472,22 @@ var data = {
 
                 'cookies':[{
                     'name':'PREF',
-                    'value':'ID'
+                    'value':'ID',
+                    'comment': '',
+                    'domain': '',
+                    'path': '/',
+                    'expires': false,
+                    'httpOnly': false,
+                    'secure': false
                 },{
                     'name':'NID',
-                    'value':'29'
+                    'value':'29',
+                    'comment': '',
+                    'domain': '',
+                    'path': '/',
+                    'expires': false,
+                    'httpOnly': false,
+                    'secure': false
                 }],
 
                 'headers':[{

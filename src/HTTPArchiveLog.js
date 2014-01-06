@@ -23,7 +23,7 @@
             comment: {
                 enumerable: true,
                 writable: true,
-                value: ''
+                value: undefined
             },
 
             version: {
@@ -44,10 +44,7 @@
             browser: {
                 enumerable: true,
                 writable: true,
-                value: {
-                    name: null,
-                    value: null
-                }
+                value: undefined
             },
 
             pages: {

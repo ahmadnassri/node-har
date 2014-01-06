@@ -29,7 +29,7 @@
         for (var key in this) {
             var value = this[key];
 
-            if (this.hasOwnProperty(key)) {
+            if (this.hasOwnProperty(key) && value !== undefined) {
                 if (value === null) {
                     obj[key] = value;
                     continue;

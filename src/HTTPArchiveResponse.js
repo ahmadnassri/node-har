@@ -67,6 +67,12 @@
                 enumerable: true,
                 writable: true,
                 value: []
+            },
+
+            comment: {
+                enumerable: true,
+                writable: true,
+                value: undefined
             }
         });
 

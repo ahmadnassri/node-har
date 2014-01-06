@@ -4,9 +4,11 @@ a JavaScript library to manupilate [HTTP Archive 1.2](http://www.softwareishard.
 
 
 ### Features
+- import/export HAR files
 - validates dates / HAR object specs (strict mode)
 - provides default values for common properties (Dates, Page IDs, etc...)
-- import/export HAR files
+- automatically calculates headersSize variable when headers are added/removed
+- export headers array into printed header message as per RFC2616 specs
 
 ### API Example
 
@@ -130,7 +132,6 @@ var page = new HTTPArchivePage({
 
 - detailed API Docs.
 - auto-calc body size when body is set
-- auto-calc header size when headers are added/removed
 - construct XMLHTTPRequest objects with HTTPArchiveRequest data
 - construct HTTPArchiveRequest object with XMLHTTPRequest response objects
 

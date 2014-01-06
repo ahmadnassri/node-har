@@ -13,13 +13,13 @@
             comment: {
                 enumerable: true,
                 writable: true,
-                value: ''
+                value: undefined
             },
 
             id: {
                 enumerable: true,
                 writable: true,
-                value: null
+                value: Math.floor(Math.random() * 11)
             },
 
             title: {

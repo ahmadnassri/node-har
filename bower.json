@@ -1,6 +1,6 @@
 {
     "name": "HTTPArchive.js",
-    "version": "1.0.3",
+    "version": "1.1.0",
     "main": "dist/HTTPArchive.js",
     "ignore": [
         "test",
