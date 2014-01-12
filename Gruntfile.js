@@ -68,8 +68,8 @@ module.exports = function (grunt) {
                 coverage: {
                     src: ['src/*.js'],
                     instrumentedFiles: 'tmp/',
-                    htmlReport: 'dist/report/coverage',
-                    lcovReport: 'dist/report/lcov',
+                    htmlReport: 'test/report/coverage',
+                    lcovReport: 'test/report/lcov',
                     linesThresholdPct: 0
                 }
             },
@@ -79,7 +79,7 @@ module.exports = function (grunt) {
 
         coveralls: {
             all: {
-                src: 'dist/report/lcov/lcov.info'
+                src: 'test/report/lcov/lcov.info'
             }
         },
 

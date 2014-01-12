@@ -22,7 +22,6 @@
         ".md",
         "test",
         "src",
-        "dist/report",
         "node_modules",
         "package.json",
         "Gruntfile.js"
