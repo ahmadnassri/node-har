@@ -3,7 +3,7 @@
     "description": "a JavaScript library to manupilate HTTP Archive 1.2 JSON objects.",
     "version": "1.2.0",
     "license": "MIT",
-    "homepage": "https://github.com/codeinchaos/httparchive.js"
+    "homepage": "https://github.com/codeinchaos/httparchive.js",
     "authors": [
         "Ahmad Nassri <ahmad@codeinchaos.com>"
     ],
@@ -22,6 +22,7 @@
         ".md",
         "test",
         "src",
+        "dist/report",
         "node_modules",
         "package.json",
         "Gruntfile.js"
