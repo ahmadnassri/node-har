@@ -64,7 +64,24 @@ module.exports = function (grunt) {
         },
 
         qunit: {
+            options: {
+                coverage: {
+                    baseUrl: '.',
+                    src: ['src/*.js'],
+                    instrumentedFiles: 'tmp/',
+                    htmlReport: 'dist/report/coverage',
+                    lcovReport: 'dist/report/lcov',
+                    linesThresholdPct: 0
+                }
+            },
+
             all: ['test/*.html']
+        },
+
+        coveralls: {
+            all: {
+                src: 'dist/report/lcov/lcov.info'
+            }
         },
 
         watch: {

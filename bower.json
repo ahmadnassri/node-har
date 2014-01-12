@@ -1,12 +1,28 @@
 {
     "name": "HTTPArchive.js",
+    "description": "a JavaScript library to manupilate HTTP Archive 1.2 JSON objects.",
     "version": "1.2.0",
-    "main": "dist/HTTPArchive.js",
+    "license": "MIT",
+    "homepage": "https://github.com/codeinchaos/httparchive.js"
+    "authors": [
+        "Ahmad Nassri <ahmad@codeinchaos.com>"
+    ],
+    "keywords": [
+        "HAR",
+        "HTTP",
+        "HTTPArchive",
+        "HTTP Archive"
+    ],
+    "main": [
+        "dist/HTTPArchive.js",
+        "dist/HTTPArchive.min.js"
+    ],
     "ignore": [
+        "**/.*",
+        ".md",
         "test",
-        ".gitignore",
-        ".jshintrc",
-        ".travis.yml",
+        "src",
+        "node_modules",
         "package.json",
         "Gruntfile.js"
     ]
