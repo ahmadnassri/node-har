@@ -83,12 +83,16 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('default', [
+        'concat'
+    ]);
+
+    grunt.registerTask('test', [
         'jshint',
-        'concat',
         'qunit'
     ]);
 
     grunt.registerTask('release', [
+        'test',
         'default',
         'uglify'
     ]);
