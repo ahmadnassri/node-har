@@ -31,7 +31,6 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     'dist/HTTPArchive.js': [
-
                         'src/HTTPArchiveLog.js',
                         'src/HTTPArchivePage.js',
                         'src/HTTPArchiveEntry.js',
@@ -65,8 +64,8 @@ module.exports = function (grunt) {
 
         qunit: {
             options: {
+                '--web-security': 'no',
                 coverage: {
-                    baseUrl: '.',
                     src: ['src/*.js'],
                     instrumentedFiles: 'tmp/',
                     htmlReport: 'dist/report/coverage',
