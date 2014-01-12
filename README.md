@@ -48,9 +48,10 @@ Four quick start options are available:
 Within the download you'll find the following files, providing both compiled and minified variations:
 
 ```
-httparchive.js/
-├── HTTPArchive.js
-└── HTTPArchive.min.js
+HTTPArchive.js/
+└── dist
+    ├── HTTPArchive.js
+    └── HTTPArchive.min.js
 ```
 
 ### Sample Usage
