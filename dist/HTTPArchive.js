@@ -1,5 +1,5 @@
 /*!
- * HTTPArchive.js v1.2.0-1 (https://github.com/codeinchaos/httparchive.js.git)
+ * HTTPArchive.js v1.2.1 (https://github.com/codeinchaos/httparchive.js.git)
  * Copyright 2014 Ahmad Nassri
  * Licensed under https://github.com/codeinchaos/httparchive.js/blob/master/LICENSE
  */
