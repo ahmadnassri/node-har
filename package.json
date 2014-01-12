@@ -36,7 +36,7 @@
         "grunt-bumpx": "~0.1.5",
         "load-grunt-tasks": "~0.2.0",
         "time-grunt": "~0.2.3",
-        "phantomjs": "~1.9.2-5",
+        "phantomjs": "~1.9.2-5"
     },
     "scripts": {
         "ci": "grunt test && grunt coveralls",
