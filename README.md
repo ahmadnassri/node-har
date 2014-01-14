@@ -5,22 +5,22 @@
 [![Coverage Status](https://coveralls.io/repos/codeinchaos/httparchive.js/badge.png)](https://coveralls.io/r/codeinchaos/httparchive.js)
 [![Total views](https://sourcegraph.com/api/repos/github.com/codeinchaos/httparchive.js/counters/views.png)](https://sourcegraph.com/github.com/codeinchaos/httparchive.js)
 
-a JavaScript library to manupilate [HTTP Archive 1.2](http://www.softwareishard.com/blog/har-12-spec/) JSON objects.
+JavaScript library to manipulate [HTTP Archive 1.2](http://www.softwareishard.com/blog/har-12-spec/) JSON objects. You can install with [Bower](http://bower.io) or [NPM](https://npmjs.org/package/httparchive.js).
 
 ## Features
 
-- import/export HAR files
-- validates dates / HAR object specs (strict mode)
-- provides default values for common properties (Dates, Page IDs, etc...)
-- automatically calculates headersSize variable when headers are added/removed
-- export headers array into printed header message as per RFC2616 specs
+- Import/export HAR objects
+- Validates aginst [HAR 1.2 Spec](http://www.softwareishard.com/blog/har-12-spec/)
+- Provides default values for common properties (Dates, Page IDs, etc...)
+- Automatically calculates `headersSize` when headers are added/removed
+- Export headers into printed header message per [RFC2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.2)
 
 ### TODO
 
-- detailed API Docs.
-- auto-calc body size when body is set
-- construct XMLHTTPRequest objects with HTTPArchiveRequest data
-- construct HTTPArchiveRequest object with XMLHTTPRequest response objects
+- Detailed API Docs.
+- Auto-calc body size when body is set
+- Construct XMLHTTPRequest objects with HTTPArchiveRequest data
+- Construct HTTPArchiveRequest object with XMLHTTPRequest response objects
 
 ## Table of contents
 
