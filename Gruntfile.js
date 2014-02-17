@@ -63,18 +63,28 @@ module.exports = function (grunt) {
         },
 
         qunit: {
-            options: {
-                '--web-security': 'no',
-                coverage: {
-                    src: ['src/*.js'],
-                    instrumentedFiles: 'tmp/',
-                    htmlReport: 'test/report/coverage',
-                    lcovReport: 'test/report/lcov',
-                    linesThresholdPct: 0
+            all:{
+                options: {
+                    urls: ['test/index.html'],
+                    coverage: {
+                        src: ['src/*.js'],
+                        instrumentedFiles: 'tmp/',
+                        htmlReport: 'test/report/coverage',
+                        lcovReport: 'test/report/lcov',
+                        linesThresholdPct: 0
+                    }
                 }
-            },
+            }
+        },
 
-            all: ['test/*.html']
+        connect: {
+            server: {
+                options: {
+                    port: 8000,
+                    hostname: 'localhost',
+                    keepalive: true
+                }
+            }
         },
 
         coveralls: {

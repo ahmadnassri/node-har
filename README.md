@@ -24,15 +24,16 @@ JavaScript library to manipulate [HTTP Archive 1.2](http://www.softwareishard.co
 
 ## Table of contents
 
- - [Quick start](#quick-start)
- - [Documentation](#documentation)
- - [Bugs and feature requests](#bugs-and-feature-requests)
- - [Compiling](#compiling)
- - [Contributing](#contributing)
- - [Community](#community)
- - [Versioning](#versioning)
- - [Authors](#authors)
- - [License](#license)
+- [Quick start](#quick-start)
+- [Documentation](#documentation)
+- [Bugs and feature requests](#bugs-and-feature-requests)
+- [Compiling](#compiling)
+- [Contributing](#contributing)
+- [Community](#community)
+- [Donating](#donating)
+- [Versioning](#versioning)
+- [Authors](#authors)
+- [License](#license)
 
 ## Quick start
 
@@ -202,6 +203,10 @@ Keep track of development and updates.
 - Implementation help may be found at Stack Overflow (tagged [`httparchive.js`](http://stackoverflow.com/questions/tagged/httparchive.js)).
 - Read and subscribe to [My Blog](http://blog.ahmadnassri.com).
 
+## Donating
+Donations are welcome to help support the continuous development of this project.
+- [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UJ2B2BTK9VLRS)
+
 ## Versioning
 
 For transparency into our release cycle and in striving to maintain backward compatibility, HTTPArchive.js is maintained under the Semantic Versioning guidelines. Sometimes we screw up, but we'll adhere to these rules whenever possible.
@@ -222,8 +227,8 @@ For more information on SemVer, please visit <http://semver.org/>.
 
 **Ahmad Nassri**
 
-- [@AhmadNassri](http://twitter.com/ahmadnassri)
-- [ahmadnassri.com](http://ahmadnassri.com)
+- Twitter: [@AhmadNassri](http://twitter.com/ahmadnassri)
+- Website: [ahmadnassri.com](http://ahmadnassri.com)
 
 ## License
 
