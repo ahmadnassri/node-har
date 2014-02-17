@@ -20,7 +20,8 @@ module.exports = function (grunt) {
 
         clean: {
             dist: ['dist'],
-            all: ['dist', 'bower_components', 'node_modules']
+            all: ['dist', 'bower_components', 'node_modules'],
+            report: ['test/report']
         },
 
         concat: {
@@ -113,6 +114,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('test', [
+        'clean:report',
         'jshint',
         'qunit'
     ]);
