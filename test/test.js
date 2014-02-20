@@ -24,7 +24,7 @@ test('HTTPArchivePage', function() {
     var page = new HTTPArchivePage(data.log.pages[0]);
 
     ok(page instanceof HTTPArchivePage, 'created instance of HTTPArchivePage');
-    //deepEqual(page.toJSON(), data.log.pages[0], 'input JSON === output JSON');
+    deepEqual(page.toJSON(), data.log.pages[0], 'input JSON === output JSON');
 });
 
 test('HTTPArchiveRequest', function() {
@@ -43,7 +43,7 @@ test('HTTPArchiveRequest', function() {
     request.setHeader('X-Content-Type', 'application/json');
     equal(request.getHeader('X-Content-Type'), 'application/json', 'adjust pre-existing header value');
 
-    //equal(request.headersSize, 666, 'header size recalculated');
+    equal(request.headersSize, 666, 'header size recalculated');
 
     request.removeHeader('X-Content-Type');
 
@@ -63,6 +63,21 @@ test('HTTPArchiveRequest', function() {
     request.setCookie('MyCookie', 'anothercookievalue');
 
     equal(request.getCookie('MyCookie'), 'anothercookievalue', 'adjust pre-existing cookie value');
+
+    // URL => Host & Query String
+    request.url = 'http://yahoo.com?foo=bar&key=vale&key=othervalue';
+
+    equal(request.getHeader('Host'), 'yahoo.com', 'Host header changed after changing the URL');
+
+    equal(request.countQuery('key'), 2, 'Query count is correct');
+
+    equal(request.getQuery('foo'), 'bar', 'Query value is correct');
+
+    request.setQuery('foo', 'baz');
+
+    equal(request.getQuery('foo'), 'baz', 'Query changed successfully');
+
+    equal(request.url, 'http://yahoo.com?foo=baz&key=vale&key=othervalue', 'URL changed successfully');
 });
 
 test('HTTPArchiveResponse', function() {
@@ -81,7 +96,7 @@ test('HTTPArchiveResponse', function() {
     response.setHeader('X-Content-Type', 'application/json');
     equal(response.getHeader('X-Content-Type'), 'application/json', 'adjust pre-existing header value');
 
-    //equal(response.headersSize, 666, 'header size recalculated');
+    equal(response.headersSize, 258, 'header size recalculated');
 
     response.removeHeader('X-Content-Type');
 

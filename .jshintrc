@@ -18,6 +18,7 @@
     "eqnull":   true,
     "bitwise":  true,
     "trailing": true,
+    "loopfunc": true,
 
     "globals": {
         "module":       true,

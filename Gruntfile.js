@@ -64,7 +64,7 @@ module.exports = function (grunt) {
         },
 
         qunit: {
-            all:{
+            dist: {
                 options: {
                     urls: ['test/index.html'],
                     coverage: {
@@ -110,7 +110,9 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('default', [
-        'concat'
+        'test',
+        'concat',
+        'watch'
     ]);
 
     grunt.registerTask('test', [

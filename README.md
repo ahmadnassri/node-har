@@ -13,7 +13,12 @@ JavaScript library to manipulate [HTTP Archive 1.2](http://www.softwareishard.co
 - Validates aginst [HAR 1.2 Spec](http://www.softwareishard.com/blog/har-12-spec/)
 - Provides default values for common properties (Dates, Page IDs, etc...)
 - Automatically calculates `headersSize` when headers are added/removed
+- Automatically parses request url to create `queryString` objects and sets `Host` header
+- Automatically updates request url when queryString array is modified
 - Export headers into printed header message per [RFC2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.2)
+- Exports requests into cURL CLI commands
+- Exports queryString array into key=value string
+
 
 ### TODO
 

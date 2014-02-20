@@ -75,4 +75,8 @@
 
         return headers.join('\r\n') + '\r\n\r\n';
     };
+
+    HTTPArchiveResponse.prototype.toString = function () {
+        return this.printHeaders();
+    };
 })(window || this);
