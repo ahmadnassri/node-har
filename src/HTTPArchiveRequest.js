@@ -232,8 +232,21 @@
         return headers.join('\r\n') + '\r\n\r\n';
     };
 
-    HTTPArchiveRequest.prototype.toCurl = function (multiLine) {
+    HTTPArchiveRequest.prototype.toCurl = function (options) {
         var curl = ['curl'];
+
+        var opt = {
+            'beautify': (options.beautify === undefined) ? false : options.beautify,
+            'indent_size': (options.indent_size === undefined) ? 2 : options.indent_size,
+            'indent_char': (options.indent_char === undefined) ? ' ' : options.indent_char
+        };
+
+        var indent_string = '';
+
+        while (opt.indent_size > 0) {
+            indent_string += opt.indent_char;
+            opt.indent_size -= 1;
+        }
 
         curl.push('-X ' + this.method);
 
@@ -253,7 +266,7 @@
 
         curl.push('"' + this.url + '"');
 
-        return curl.join(multiLine === true ? ' \\\n\t' : ' ');
+        return curl.join(opt.beautify === true ? ' \\\n' + indent_string : ' ');
     };
 
     HTTPArchiveRequest.prototype.toString = function () {
