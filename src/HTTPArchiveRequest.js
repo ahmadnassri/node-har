@@ -223,7 +223,6 @@
 
         // add missing parts to header
         headers.push(this.method + ' ' + path + ' ' + this.httpVersion);
-        //headers.push('Host: ' + url[2]);
 
         for (var name in this.props._headers) {
             headers.push(name + ': ' + this.props._headers[name]);

@@ -109,21 +109,22 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('default', [
-        'test',
-        'concat',
-        'watch'
-    ]);
-
     grunt.registerTask('test', [
         'clean:report',
         'jshint',
         'qunit'
     ]);
 
+    grunt.registerTask('default', [
+        'test',
+        'concat',
+        'watch'
+    ]);
+
     grunt.registerTask('release', [
         'test',
-        'default',
+        'test',
+        'concat',
         'uglify'
     ]);
 };

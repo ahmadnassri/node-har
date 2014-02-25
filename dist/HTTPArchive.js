@@ -1,5 +1,5 @@
 /*!
- * HTTPArchive.js v1.2.1 (https://github.com/codeinchaos/httparchive.js.git)
+ * HTTPArchive.js v1.2.2 (https://github.com/codeinchaos/httparchive.js.git)
  * Copyright 2014 Ahmad Nassri
  * Licensed under https://github.com/codeinchaos/httparchive.js/blob/master/LICENSE
  */
@@ -557,7 +557,6 @@
 
         // add missing parts to header
         headers.push(this.method + ' ' + path + ' ' + this.httpVersion);
-        //headers.push('Host: ' + url[2]);
 
         for (var name in this.props._headers) {
             headers.push(name + ': ' + this.props._headers[name]);
