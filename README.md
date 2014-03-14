@@ -211,8 +211,8 @@ Donate bitcoins to this project or make commits and get tips for it. If your com
 
 Donations are welcome to help support the continuous development of this project.
 
-[![GitTip](//img.shields.io/gittip/ahmadnassri.svg)](https://www.gittip.com/ahmadnassri/)
-[![PayPal](//img.shields.io/badge/PayPal-Donate-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UJ2B2BTK9VLRS)
+[![GitTip](http://img.shields.io/gittip/ahmadnassri.svg)](https://www.gittip.com/ahmadnassri/)
+[![PayPal](http://img.shields.io/badge/PayPal-Donate-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UJ2B2BTK9VLRS)
 
 ## Community
 
