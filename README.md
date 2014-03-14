@@ -249,3 +249,7 @@ For more information on SemVer, please visit <http://semver.org/>.
 ## License
 
 Licensed under [the MIT license](LICENSE).
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/codeinchaos/httparchive.js/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
