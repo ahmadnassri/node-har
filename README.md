@@ -35,8 +35,9 @@ JavaScript library to manipulate [HTTP Archive 1.2](http://www.softwareishard.co
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Compiling](#compiling)
 - [Contributing](#contributing)
-- [Community](#community)
+- [Contribute and Earn](#contribute-and-earn)
 - [Donating](#donating)
+- [Community](#community)
 - [Versioning](#versioning)
 - [Authors](#authors)
 - [License](#license)
@@ -200,6 +201,19 @@ More over, if your pull request contains JavaScript patches or features, you mus
 
 Editor preferences are available in the [editor config](https://github.com/codeinchaos/httparchive.js/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
+## Contribute and Earn
+
+Donate bitcoins to this project or make commits and get tips for it. If your commit is accepted by project maintainer and there are bitcoins on its balance, you will get a tip!
+
+[![tip for next commit](http://tip4commit.com/projects/640.svg)](http://tip4commit.com/projects/640)
+
+## Donating
+
+Donations are welcome to help support the continuous development of this project.
+
+[![GitTip](//img.shields.io/gittip/ahmadnassri.svg)](https://www.gittip.com/ahmadnassri/)
+[![PayPal](//img.shields.io/badge/PayPal-Donate-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UJ2B2BTK9VLRS)
+
 ## Community
 
 Keep track of development and updates.
@@ -208,13 +222,6 @@ Keep track of development and updates.
 - Tweet [@codeinchaos](http://twitter.com/codeinchaos) with any questions/personal support requests.
 - Implementation help may be found at Stack Overflow (tagged [`httparchive.js`](http://stackoverflow.com/questions/tagged/httparchive.js)).
 - Read and subscribe to [My Blog](http://blog.ahmadnassri.com).
-
-## Donating
-
-Donations are welcome to help support the continuous development of this project.
-
-[![GitTip](//img.shields.io/gittip/ahmadnassri.svg)](https://www.gittip.com/ahmadnassri/)
-[![PayPal](//img.shields.io/badge/PayPal-Donate-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UJ2B2BTK9VLRS)
 
 ## Versioning
 
