@@ -19,7 +19,7 @@ and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
 
 * Please **do not** use the issue tracker for personal support requests.  Stack
-  Overflow ([`twitter-boostrap`](http://stackoverflow.com/questions/tagged/httparchive.js) tag) or [Twitter](https://github.com/codeinchaos/httparchive.js/blob/master/README.md#community) are better places to get help.
+  Overflow ([`httparchive.js`](http://stackoverflow.com/questions/tagged/httparchive.js) tag) or [Twitter](https://github.com/codeinchaos/httparchive.js/blob/master/README.md#community) are better places to get help.
 
 * Please **do not** derail or troll issues. Keep the discussion on topic and
   respect the opinions of others.

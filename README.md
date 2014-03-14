@@ -30,6 +30,7 @@ JavaScript library to manipulate [HTTP Archive 1.2](http://www.softwareishard.co
 ## Table of contents
 
 - [Quick start](#quick-start)
+- [Change Log](#changelog)
 - [Documentation](#documentation)
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Compiling](#compiling)
@@ -209,8 +210,11 @@ Keep track of development and updates.
 - Read and subscribe to [My Blog](http://blog.ahmadnassri.com).
 
 ## Donating
+
 Donations are welcome to help support the continuous development of this project.
-- [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UJ2B2BTK9VLRS)
+
+[![GitTip](//img.shields.io/gittip/ahmadnassri.svg)](https://www.gittip.com/ahmadnassri/)
+[![PayPal](//img.shields.io/badge/PayPal-Donate-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UJ2B2BTK9VLRS)
 
 ## Versioning
 

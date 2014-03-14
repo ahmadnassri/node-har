@@ -1,7 +1,7 @@
 {
   "name": "httparchive.js",
   "version": "1.2.2",
-  "author": "Ahmad Nassri",
+  "author": "Ahmad Nassri <ahmad@codeinchaos.com> (http://ahmadnassri.com)",
   "description": "JavaScript library to manipulate HTTP Archive 1.2 JSON objects.",
   "keywords": [
     "HAR",
