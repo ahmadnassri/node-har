@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "HAR",
+  "name": "har",
   "description": "HTTP Archive (HAR) Dynamic Object",
   "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
   "homepage": "https://github.com/ahmadnassri/har",
