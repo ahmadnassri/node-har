@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "har",
+  "name": "HAR",
   "description": "HTTP Archive (HAR) Dynamic Object",
   "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
   "homepage": "https://github.com/ahmadnassri/har",
@@ -8,7 +8,9 @@
   "license": "MIT",
   "main": "lib/index.js",
   "keywords": [
-    "har"
+    "har",
+    "http",
+    "archive"
   ],
   "engines": {
     "node": ">=0.10"

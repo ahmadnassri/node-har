@@ -277,7 +277,6 @@ new HAR.Request().addHeader(header)
 new HAR.Request().addQuery(query)
 ```
 
-
 ### HAR.Response(data)
 
 - **data**: `Object` *(a [response](http://www.softwareishard.com/blog/har-12-spec/#response) object)*
