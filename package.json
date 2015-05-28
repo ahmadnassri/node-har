@@ -22,9 +22,16 @@
     "url": "https://github.com/ahmadnassri/har/issues"
   },
   "scripts": {
-    "test": "standard && mocha --reporter spec",
-    "coverage": "istanbul cover --dir coverage ./node_modules/mocha/bin/_mocha",
+    "pretest": "standard && echint",
+    "test": "mocha",
+    "posttest": "npm run coverage",
+    "coverage": "istanbul cover --dir coverage _mocha -- -R dot",
     "codeclimate": "codeclimate < coverage/lcov.info"
+  },
+  "echint": {
+    "ignore": [
+      "coverage/**"
+    ]
   },
   "devDependencies": {
     "codeclimate-test-reporter": "0.0.4",
