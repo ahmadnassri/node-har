@@ -5,7 +5,6 @@
 var Content = require('..').Content
 var Cookie = require('..').Cookie
 var Header = require('..').Header
-var Content = require('..').Content
 var Response = require('..').Response
 var validator = require('har-validator').response
 
