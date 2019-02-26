@@ -44,6 +44,6 @@
   "dependencies": {
     "commander": "^2.8.1",
     "debug": "^4.0.0",
-    "har-validator": "^4.0.1"
+    "har-validator": "^5.0.0"
   }
 }
