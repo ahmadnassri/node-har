@@ -37,7 +37,7 @@
     "codeclimate-test-reporter": "0.5.1",
     "echint": "^2.0.0",
     "istanbul": "^0.4.5",
-    "mocha": "^6.0.0",
+    "mocha": "^10.2.0",
     "should": "^11.1.0",
     "standard": "^8.0.0"
   },
